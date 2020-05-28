@@ -1,0 +1,44 @@
+/* TYPOGRAPHY */
+  // Font-size
+  $fontSizeS: 1.25em;
+  $fontSizeM:  1.5em;
+  $fontSizeL:    2em;
+  $fontSizeXL: 2.5em;
+
+  // Font weights
+  $font-regular: 'Lausanne-300';
+  $font-bold: 'Lausanne-500';
+
+  // Font imports
+  @font-face {
+    font-family: $font-regular;
+    src: url('/src/fonts/lausanne-300.eot');
+    src: url('/src/fonts/lausanne-300.woff') format('woff'),
+    url('/src/fonts/lausanne-300.otf') format('opentype'),
+    url('/src/fonts/lausanne-300.svg') format('svg');
+  }
+  @font-face {
+    font-family: $font-bold;
+    src: url('/src/fonts/lausanne-500.eot');
+    src: url('/src/fonts/lausanne-500.woff') format('woff'),
+    url('/src/fonts/lausanne-500.otf') format('opentype'),
+    url('/src/fonts/lausanne-500.svg') format('svg');
+  }
+
+  // Font smoothing
+  @mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  // Font exports
+  @mixin font-family-regular {
+    font-family: $font-regular, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  @mixin font-family-bold {
+    font-family: $font-bold, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }

@@ -1,0 +1,13 @@
+@import './layout.scss';
+
+/* ELEMENTS */
+  // Buttons
+  button {
+    padding: $paddingM;
+
+    background: $defaultWhite;
+    border: $borderNone;
+
+    font-size: $fontSizeM;
+    text-transform: uppercase;
+  }
