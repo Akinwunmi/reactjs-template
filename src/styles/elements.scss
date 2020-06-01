@@ -1,13 +1,22 @@
-@import './layout.scss';
+@import "./layout.scss";
 
 /* ELEMENTS */
-  // Buttons
-  button {
-    padding: $paddingM;
+// Buttons
+button {
+  padding: $paddingM;
 
-    background: $defaultWhite;
-    border: $borderNone;
+  cursor: pointer;
+  background: $defaultWhite;
+  border: $borderNone;
 
-    font-size: $fontSizeM;
-    text-transform: uppercase;
-  }
+  font-size: $fontSizeM;
+  text-transform: uppercase;
+}
+
+// Hover
+.hoverBackground:hover {
+  background: $primaryGreen;
+}
+.hoverColor:hover {
+  color: $primaryGreen;
+}

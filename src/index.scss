@@ -1,4 +1,4 @@
-@import './styles/styles.scss';
+@import "./styles/styles.scss";
 
 * {
   margin: $marginNone;
@@ -10,8 +10,4 @@
   @include font-family-regular;
   font-size: 12px;
   color: $defaultBlack;
-}
-
-body {
-  margin: $marginNone;
 }

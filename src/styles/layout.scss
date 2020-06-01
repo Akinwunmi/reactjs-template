@@ -1,30 +1,30 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 /* LAYOUT */
-  // Width
-  $widthCol: 80px;
-  $widthFull: 100%;
+// Width
+$widthCol: 80px;
+$widthFull: 100%;
 
-  // Height
-  $heightRow:  50px;
-  $heightFull: 100%;
+// Height
+$heightRow: 50px;
+$heightFull: 100%;
 
-  // Margin
-  $marginNone:  0;
-  $marginS:   5px;
-  $marginM:  10px;
-  $marginL:  15px;
-  $marginXL: 20px;
+// Margin
+$marginNone: 0;
+$marginS: 5px;
+$marginM: 10px;
+$marginL: 15px;
+$marginXL: 20px;
 
-  // Padding
-  $paddingNone:  0;
-  $paddingS:   5px;
-  $paddingM:  10px;
-  $paddingL:  15px;
-  $paddingXL: 20px;
+// Padding
+$paddingNone: 0;
+$paddingS: 5px;
+$paddingM: 10px;
+$paddingL: 15px;
+$paddingXL: 20px;
 
-  // Borders
-  $borderNone: 0;
-  $borderS: 1px solid $defaultBlack;
-    // Border radius
-    $borderRadiusXL: 20px;
+// Borders
+$borderNone: 0;
+$borderS: 1px solid $defaultBlack;
+// Border radius
+$borderRadiusXL: 20px;
