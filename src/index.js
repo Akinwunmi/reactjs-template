@@ -1,13 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
+import { Provider } from "react-redux";
+import configureStore from "./store";
+
 import App from "./App";
+import "./variables";
 import * as serviceWorker from "./serviceWorker";
 
+import "./index.scss";
+
+window.$title = "Template Title";
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={configureStore()}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById("root")
 );
 

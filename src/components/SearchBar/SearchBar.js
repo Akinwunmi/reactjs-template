@@ -2,9 +2,9 @@ import React from "react";
 
 import "./SearchBar.scss";
 
-export const SearchBar = () => {
+const SearchBar = () => {
   return (
-    <div class="SearchBar">
+    <div className="SearchBar">
       <input
         id="SearchBarInput"
         type="search"
@@ -14,3 +14,5 @@ export const SearchBar = () => {
     </div>
   );
 };
+
+export default SearchBar;

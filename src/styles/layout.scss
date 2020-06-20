@@ -23,8 +23,14 @@ $paddingM: 10px;
 $paddingL: 15px;
 $paddingXL: 20px;
 
+// Display
+$displayBlock: block;
+
 // Borders
 $borderNone: 0;
 $borderS: 1px solid $defaultBlack;
+$borderSprimaryGreen: 1px solid $primaryGreen;
+$borderSdefaultWhite: 1px solid $defaultWhite;
+$borderStransparent: 1px solid transparent;
 // Border radius
 $borderRadiusXL: 20px;

@@ -1,5 +1,6 @@
 /* TYPOGRAPHY */
 // Font-size
+$fontSizeXS: 1em;
 $fontSizeS: 1.25em;
 $fontSizeM: 1.5em;
 $fontSizeL: 2em;
@@ -12,17 +13,17 @@ $font-bold: "Lausanne-500";
 // Font imports
 @font-face {
   font-family: $font-regular;
-  src: url("/src/fonts/lausanne-300.eot");
-  src: url("/src/fonts/lausanne-300.woff") format("woff"),
-    url("/src/fonts/lausanne-300.otf") format("opentype"),
-    url("/src/fonts/lausanne-300.svg") format("svg");
+  src: url("../fonts/lausanne-300.eot");
+  src: url("../fonts/lausanne-300.woff") format("woff"),
+    url("../fonts/lausanne-300.otf") format("opentype"),
+    url("../fonts/lausanne-300.svg") format("svg");
 }
 @font-face {
   font-family: $font-bold;
-  src: url("/src/fonts/lausanne-500.eot");
-  src: url("/src/fonts/lausanne-500.woff") format("woff"),
-    url("/src/fonts/lausanne-500.otf") format("opentype"),
-    url("/src/fonts/lausanne-500.svg") format("svg");
+  src: url("../fonts/lausanne-500.eot");
+  src: url("../fonts/lausanne-500.woff") format("woff"),
+    url("../fonts/lausanne-500.otf") format("opentype"),
+    url("../fonts/lausanne-500.svg") format("svg");
 }
 
 // Font smoothing
@@ -41,4 +42,24 @@ $font-bold: "Lausanne-500";
   font-family: $font-bold, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+h1 {
+  font-size: $fontSizeL;
+}
+h2 {
+  font-size: $fontSizeM;
+}
+h3 {
+  font-size: $fontSizeS;
+}
+h4 {
+  font-size: $fontSizeXS;
+}
+p {
+  font-size: $fontSizeS;
+}
+b {
+  @include font-family-bold();
+  font-size: $fontSizeXS;
 }

@@ -1,9 +1,11 @@
 @import "../../index.scss";
 
 .SearchBar {
-  height: $heightRow;
+  height: $heightRow - 10px;
   margin-bottom: $marginM;
-  padding: $paddingM $paddingS $paddingNone;
+  padding: $paddingM $paddingS;
+
+  border-bottom: $borderS;
 
   input {
     width: $widthFull;

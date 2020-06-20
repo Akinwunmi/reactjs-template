@@ -1,5 +1,26 @@
 @import "./index.scss";
 
 .App {
-  margin-top: $heightRow * 2;
+  height: $heightFull;
+  margin-top: $heightRow; // NavbarBasic
+  // margin-top: $heightRow * 2; // NavbarLogin
+
+  .clock {
+    display: flex;
+    justify-content: space-between;
+    padding: $paddingNone $paddingM $paddingM;
+    border-bottom: $borderS;
+
+    div {
+      // @include font-family-bold;
+      font-size: $fontSizeS;
+    }
+  }
+  .content {
+    padding: $paddingS;
+
+    .text-row {
+      padding: $paddingL $paddingS;
+    }
+  }
 }

@@ -1,4 +1,6 @@
 /* COLORS */
+
+// UI Pallette
 // Primary
 $primaryGreen: #32ff87;
 
@@ -13,3 +15,38 @@ $defaultBlack: #333;
 $defaultLightgrey: #d3d3d3;
 $defaultDarkgrey: #888;
 $defaultWhite: white;
+
+// RGB
+// Primary
+$rgbRed: rgb(255, 0, 0);
+$rgbGreen: rgb(0, 255, 0);
+$rgbBlue: rgb(0, 0, 255);
+
+$rgbYellow: rgb(255, 255, 0);
+$rgbPink: rgb(255, 0, 255);
+$rgbCyan: rgb(0, 255, 255);
+
+// Secondary
+$rgbOrange: rgb(255, 128, 0);
+$rgbRedPink: rgb(255, 0, 128);
+
+$rgbGreenYellow: rgb(128, 255, 0);
+$rgbGreenCyan: rgb(0, 255, 128);
+
+$rgbPurple: rgb(128, 0, 255);
+$rgbBlueCyan: rgb(0, 128, 255);
+
+// Tertiary
+$rgbRedOrangePink: rgb(255, 128, 128);
+$rgbGreenYellowCyan: rgb(128, 255, 128);
+$rgbBluePurpleCyan: rgb(128, 128, 255);
+
+$rgbDarkRed: rgb(128, 0, 0);
+$rgbDarkGreen: rgb(0, 128, 0);
+$rgbDarkBlue: rgb(0, 0, 128);
+
+$rgbIndigo: rgb(128, 0, 128);
+$rgbOlive: rgb(128, 128, 0);
+$rgbTeal: rgb(0, 128, 128);
+
+$rgbGrey: rgb(128, 128, 128);
