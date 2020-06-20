@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.side-drawer {
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $widthFull;
+  max-width: $widthCol * 4;
+  height: $heightFull;
+
+  background: $defaultWhite;
+  border-right: $borderS;
+
+  transform: translateX(-$widthFull);
+  transition: transform 0.1s ease-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: $heightFull;
+
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 769px) {
+  .side-drawer {
+    display: none;
+  }
+}

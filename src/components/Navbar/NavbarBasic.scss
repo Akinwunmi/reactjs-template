@@ -1,0 +1,46 @@
+@import "../../index.scss";
+
+.navbar {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  width: $widthFull;
+  height: $heightRow;
+
+  background: $defaultWhite;
+
+  .navbar-navigation {
+    display: flex;
+    align-items: center;
+    height: $heightFull;
+
+    border-bottom: $borderS;
+
+    .logo {
+      margin-left: $marginS + 2px;
+
+      a {
+        font-size: $fontSizeL;
+        text-decoration: none;
+      }
+    }
+    .spacer {
+      flex: 1;
+    }
+    .navbar-navigation-items {
+      // display: none;
+
+      ul {
+        display: flex;
+
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-navigation-items {
+    display: none;
+  }
+}

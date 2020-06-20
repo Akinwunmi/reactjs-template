@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.backdrop {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $widthFull;
+  height: $heightFull;
+
+  background: rgba($defaultBlack, $alpha: 0.35);
+}

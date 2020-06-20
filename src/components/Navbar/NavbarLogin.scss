@@ -1,0 +1,81 @@
+@import "../../index.scss";
+
+.header-login {
+  position: fixed;
+  top: 0;
+  width: $widthFull;
+
+  background: $defaultWhite;
+  border-bottom: $borderS;
+
+  nav {
+    #top-row {
+      height: $heightRow;
+
+      border-bottom: $borderS;
+
+      .logo {
+        height: $heightFull;
+
+        text-transform: none;
+
+        a {
+          font-size: $fontSizeS;
+          text-decoration: none;
+        }
+      }
+      #btn-login {
+        float: right;
+        width: $widthCol * 2;
+        height: $heightFull;
+
+        border-left: $borderS;
+
+        text-align: right;
+      }
+    }
+    #bottom-row {
+      height: $heightRow;
+
+      #btn-menu {
+        height: $heightFull;
+
+        svg line {
+          stroke: $defaultBlack;
+          stroke-width: 2px;
+        }
+
+        &:before {
+          top: 0;
+          left: 2px;
+          width: 0;
+          height: 0;
+
+          border-right: $borderStransparent;
+        }
+        &:hover {
+          &:before {
+            width: $widthFull;
+            height: $heightFull;
+
+            @include transition(height 0.2s ease-out);
+            border-right-color: $defaultBlack;
+          }
+        }
+      }
+
+      #btn-signup {
+        float: right;
+        width: $widthCol * 2;
+        height: $heightFull;
+
+        border-left: $borderS;
+
+        text-align: right;
+      }
+    }
+    .header-navigation {
+      display: none;
+    }
+  }
+}

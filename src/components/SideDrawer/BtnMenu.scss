@@ -1,0 +1,43 @@
+@import "../../index.scss";
+
+#btn-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  height: $heightFull;
+  padding: ($paddingL + 3px) ($paddingM + 1px) ($paddingL + 1px) $paddingM;
+
+  .icn-menu-line {
+    width: $widthFull;
+    height: 2px;
+
+    background: $defaultBlack;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+
+    // border-right: $borderStransparent;
+  }
+
+  &:hover {
+    @include transition(background-color 0.4s ease-out);
+    background-color: $primaryGreen;
+
+    &:before {
+      width: $widthFull;
+      height: $heightFull;
+
+      // @include transition(height 0.2s ease-out);
+      // border-right-color: $defaultBlack;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  #btn-menu {
+    display: none;
+  }
+}
