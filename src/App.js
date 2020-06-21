@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import NavbarBasic from "./components/Navbar/NavbarBasic";
@@ -14,34 +13,23 @@ import Welcome from "./components/Welcome";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 
-import { defaultAction } from "./actions/defaultAction";
-
 import "./App.scss";
 
-const mapStateToProps = (state) => ({
-  ...state,
-});
-const mapDispatchToProps = (dispatch) => ({
-  defaultAction: () => dispatch(defaultAction()),
-});
-
+// App COMPONENT
 class App extends Component {
   state = {
     sideDrawerOpen: false,
   };
 
+  // TOGGLE SIDEDRAWER
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
-
+  // CLOSE SIDEDRAWER (click outside)
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
-  };
-
-  defaultAction = (event) => {
-    this.props.defaultAction();
   };
 
   render() {
@@ -81,10 +69,6 @@ class App extends Component {
                   </Route>
                 </Switch>
               </Router>
-              <pre>{JSON.stringify(this.props)}</pre>
-              <button className="hoverBackground" onClick={this.defaultAction}>
-                Test Redux
-              </button>
             </div>
           </article>
         </main>
@@ -93,4 +77,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

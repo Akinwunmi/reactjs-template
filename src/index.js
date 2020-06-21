@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import configureStore from "./store";
 
 import App from "./App";
 import "./variables";
@@ -12,9 +10,9 @@ import "./index.scss";
 window.$title = "Template Title";
 
 ReactDOM.render(
-  <Provider store={configureStore()}>
+  <React.StrictMode>
     <App />
-  </Provider>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
